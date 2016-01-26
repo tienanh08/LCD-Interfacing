@@ -1,0 +1,408 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\lcd.X.production.obj
+cinit CODE 0 7FC 7FC 4 2
+text3 CODE 0 70F 70F ED 2
+maintext CODE 0 636 636 D9 2
+cstackCOMMON COMMON 1 70 70 E 1
+strings STRING 0 3 3 4C 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0020-006F 1
+BANK1 00A0-00EF 1
+BANK2 0110-016F 1
+BANK3 0190-01EF 1
+CODE 004F-0635 2
+CODE 0800-1FFF 2
+CONST 004F-0635 2
+CONST 0800-1FFF 2
+EEDATA 2100-21FF 2
+ENTRY 004F-0635 2
+ENTRY 0800-1FFF 2
+IDLOC 2000-2003 2
+RAM 0020-006F 1
+RAM 00A0-00EF 1
+RAM 0110-016F 1
+RAM 0190-01EF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-010F 1
+SFR3 0180-018F 1
+STACK 0110-016F 1
+STRCODE 004F-0635 2
+STRCODE 0800-1FFF 2
+STRING 004F-0635 2
+STRING 0800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\lcd.X.production.obj
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":24 636 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":27 636 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":28 638 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":31 63D maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":32 642 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":33 64A maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":34 650 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":35 658 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":36 65E maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":37 66B maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":38 670 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":39 678 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":40 67E maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":41 686 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":42 68C maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":43 699 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":44 69E maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":45 6A6 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":47 6AC maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":49 6AE maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":50 6BB maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":47 6C0 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":53 6C7 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":55 6C9 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":56 6D6 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":53 6DE maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":59 6E2 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":60 6E7 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":61 6EF maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":62 6F5 maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\main.c":63 6FB maintext CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":102 70F text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":104 70F text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":105 713 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":108 715 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":110 715 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":111 719 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":33 71B text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":35 71B text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":36 71F text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":95 721 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":98 722 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":99 72F text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":98 73A text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":79 73E text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":82 73F text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":83 742 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":84 746 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":85 749 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":86 74E text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":87 74F text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":88 754 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":89 757 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":90 75B text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":91 75C text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":92 761 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":93 764 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":39 765 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":42 766 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":44 768 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":47 76D text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":48 770 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":50 772 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":52 776 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":55 77B text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":56 77E text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":60 780 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":62 780 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":63 784 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":64 78D text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":65 791 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":66 79A text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":67 79E text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":68 7A6 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":70 7AA text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":71 7AE text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":72 7B2 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":73 7B6 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":74 7BA text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":75 7BE text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":76 7C2 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":24 7C4 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":26 7C5 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":27 7C8 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":28 7CC text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":29 7CD text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":30 7D6 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":31 7D9 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":2 7DA text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":4 7DB text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":5 7DD text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":6 7E0 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":7 7E0 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":9 7E2 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":10 7E4 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":11 7E6 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":12 7E6 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":14 7E7 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":15 7E9 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":16 7EB text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":17 7EB text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":19 7EC text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":20 7EE text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":21 7F0 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":22 7F0 text3 CODE
+"E:\Website\Blog\Bai viet\2015.12.29-LCD\LCD Interfacing\lcd.X\lcd.h":23 7F1 text3 CODE
+"C:\Users\TienAnh\AppData\Local\Temp\s684.":322 7FC cinit CODE
+"C:\Users\TienAnh\AppData\Local\Temp\s684.":325 7FC cinit CODE
+"C:\Users\TienAnh\AppData\Local\Temp\s684.":331 7FC cinit CODE
+"C:\Users\TienAnh\AppData\Local\Temp\s684.":332 7FC cinit CODE
+"C:\Users\TienAnh\AppData\Local\Temp\s684.":333 7FD cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+PL2 FE4 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+PL4 E12 0 CODE 0 maintext dist/default/production\lcd.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+_RD2 42 0 ABS 0 - dist/default/production\lcd.X.production.obj
+_RD3 43 0 ABS 0 - dist/default/production\lcd.X.production.obj
+_RD4 44 0 ABS 0 - dist/default/production\lcd.X.production.obj
+_RD5 45 0 ABS 0 - dist/default/production\lcd.X.production.obj
+_RD6 46 0 ABS 0 - dist/default/production\lcd.X.production.obj
+_RD7 47 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hintentry 0 0 CODE 0 intentry -
+__Lintentry 0 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__end_of_Lcd_Write_String E7C 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+_Lcd_Write_Char E7C 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__end_of_Lcd_Shift_Left E36 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+_main C6C 0 CODE 0 maintext dist/default/production\lcd.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+btemp 7E 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\lcd.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\lcd.X.production.obj
+start 0 0 CODE 0 init C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+_TRISD 88 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\lcd.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\lcd.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\lcd.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\lcd.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\lcd.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\lcd.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\lcd.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\lcd.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_of_Lcd_Init F88 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+main@a 7C 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+__end_of__stringtab 12 0 STRING 0 strings dist/default/production\lcd.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+Lcd_Set_Cursor@b 74 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+__end_of__stringdata 9E 0 STRING 0 strings dist/default/production\lcd.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+_Lcd_Init F00 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__end_of_Lcd_Write_Char ECA 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___int_sp 0 0 STACK 2 stack C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+_Lcd_Port FB4 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+_Lcd_Shift_Right E1E 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__size_of_Lcd_Shift_Right 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+_Lcd_Write_String E42 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+_Lcd_Clear E36 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+Lcd_Write_Char@y 73 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+stacklo 0 0 ABS 0 - C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+__Hinit 0 0 CODE 0 init -
+__Linit 0 0 CODE 0 init -
+__end_of_main E12 0 CODE 0 maintext dist/default/production\lcd.X.production.obj
+__end_of_Lcd_Cmd FB4 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\lcd.X.production.obj
+__size_of_Lcd_Clear 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__stringtab 6 0 STRING 0 strings dist/default/production\lcd.X.production.obj
+__end_of_Lcd_Shift_Right E2A 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 6 0 STRING 0 strings dist/default/production\lcd.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+_Lcd_Set_Cursor ECA 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 2 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext1 E42 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__ptext2 E7C 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__ptext3 E1E 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__ptext4 E2A 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__ptext5 ECA 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__ptext6 F00 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__ptext7 E36 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+Lcd_Set_Cursor@a 75 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+__ptext8 F88 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__ptext9 FB4 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\lcd.X.production.obj
+Lcd_Write_String@a 77 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+Lcd_Write_String@i 75 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+_Lcd_Cmd F88 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+Lcd_Set_Cursor@temp 78 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hspace_0 2008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FF8 0 CODE 0 cinit -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__size_of_Lcd_Write_String 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__end_of_Lcd_Set_Cursor F00 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__size_of_Lcd_Set_Cursor 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__size_of_Lcd_Shift_Left 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__end_of_Lcd_Clear E42 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+Lcd_Set_Cursor@z 76 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+__Hpa_nodes 0 0 ABS 0 pa_nodes -
+__Lpa_nodes 0 0 ABS 0 pa_nodes -
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__Hend_init 6 0 CODE 0 end_init -
+__Lend_init 0 0 CODE 0 end_init -
+Lcd_Write_Char@a 74 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+__size_of_Lcd_Init 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+_Lcd_Shift_Left E2A 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__stringdata 12 0 STRING 0 strings dist/default/production\lcd.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+intlevel2 0 0 CODE 0 functab C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+intlevel3 0 0 CODE 0 functab C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+Lcd_Write_Char@temp 72 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+intlevel4 0 0 CODE 0 functab C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+__end_of_Lcd_Port FE4 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+intlevel5 0 0 CODE 0 functab C:\Users\TienAnh\AppData\Local\Temp\s684.obj
+__size_of_Lcd_Port 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__end_ofPL2 FF8 0 CODE 0 text3 dist/default/production\lcd.X.production.obj
+__size_of_Lcd_Write_Char 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+start_initialization FF8 0 CODE 0 cinit dist/default/production\lcd.X.production.obj
+__end_ofPL4 E1E 0 CODE 0 maintext dist/default/production\lcd.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext C6C 0 CODE 0 maintext dist/default/production\lcd.X.production.obj
+__initialization FF8 0 CODE 0 cinit dist/default/production\lcd.X.production.obj
+__stringbase 10 0 STRING 0 strings dist/default/production\lcd.X.production.obj
+Lcd_Cmd@a 73 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+Lcd_Set_Cursor@y 77 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+Lcd_Port@a 70 0 COMMON 1 cstackCOMMON dist/default/production\lcd.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\lcd.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2
+cinit 0 7FC FF8 4 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 E 1
+text3 0 70F E1E ED 2
+maintext 0 636 C6C D9 2
+strings 0 3 6 4C 2

@@ -1,0 +1,16 @@
+_Lcd_Write_String: CODE, 1825 0 29
+_Lcd_Shift_Left: CODE, 1813 0 6
+_Lcd_Init: CODE, 1920 0 68
+__stringtab: STRING, 3 0 6
+__stringdata: STRING, 9 0 70
+_Lcd_Write_Char: CODE, 1854 0 39
+_main: CODE, 1590 0 211
+_Lcd_Cmd: CODE, 1988 0 22
+_Lcd_Shift_Right: CODE, 1807 0 6
+__initialization: CODE, 2044 0 0
+_Lcd_Set_Cursor: CODE, 1893 0 27
+_Lcd_Clear: CODE, 1819 0 6
+_Lcd_Port: CODE, 2010 0 24
+PL2: CODE, 2034 0 10
+PL4: CODE, 1801 0 6
+Total: 530
